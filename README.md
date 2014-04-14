@@ -1,5 +1,6 @@
 === Hyperlocal Life Theme by BGRWeb.com ===
 
+HMTL 5 and Genesis Framework 2.0.1+ compatible.
 Github project link: https://github.com/prilldev/hyperlocal-life
 
 
@@ -13,5 +14,6 @@ Github project link: https://github.com/prilldev/hyperlocal-life
 
 === Theme Support ===
 
-Check out http://bgrweb.com/hyperlocal-theme/ for more details on this theme.
-Visit http://mywp.bgrweb.com/ for Managed WordPress hosting and paid support of this theme.
+Check out http://bgrweb.com/hyperlocal-theme/ for more details on this theme.<br />
+<em>** Requires various Genesis Plugins to be truly functional. Which ones? Ask me! ** </em><br />
+<strong>Visit http://mywp.bgrweb.com/ for Managed WordPress hosting and paid support of this theme.</strong>

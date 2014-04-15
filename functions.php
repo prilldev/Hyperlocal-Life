@@ -3,7 +3,7 @@
 include_once( get_template_directory() . '/lib/init.php' );
 
 //* Child theme (do not remove) */
-define( 'CHILD_THEME_NAME', 'Hyperlocal Life' );
+define( 'CHILD_THEME_NAME', 'Hyperlocal' );
 define( 'CHILD_THEME_URL', 'http://bgrweb.com/hyperlocal-theme/' );
 
 //* Enqueue Open Sans Google font
@@ -21,13 +21,13 @@ add_theme_support( 'genesis-responsive-viewport' );
 //* Add support for custom background
 add_theme_support( 'custom-background' );
 
-/** Add support for custom header (500x225) */
+/** Add support for custom header (600x250) */
 add_theme_support( 'custom-header', array(
 	'header_image'    => '',
 	'header-selector' => '.site-title a',
 	'header-text'     => false,
-	'height'          => 225,
-	'width'           => 500,
+	'height'          => 250,
+	'width'           => 600,
 ) );
 
 //* Add support for 3-column footer widgets
@@ -35,9 +35,10 @@ add_theme_support( 'genesis-footer-widgets', 3 );
 
 /** Create additional color style options (default is Gray) */
 add_theme_support( 'genesis-style-selector', array(
+	'local-life-redsec'	=> __( 'Black Header + Red', 'Local Life' ),
+	'local-life-whitered' => __( 'White Header + Red', 'Local Life' ),
 	'local-life-ltbluebk'	=> __( 'Light Blue Main', 'Local Life' ),
-	'local-life-redbk'	=> __( 'Red Main', 'Local Life' ),
-	'local-life-redsec'	=> __( 'Red Accents', 'Local Life' )
+	'local-life-redbk'	=> __( 'Light Red Main', 'Local Life' )
 ) );
 
 //* Reposition the primary navigation

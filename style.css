@@ -6,7 +6,7 @@
 	Theme URI: http://bgrweb.com/hyperlocal-theme/
 	Version: 2.0.3
  
-	Tags: gray, light blue, red, white, one-column, two-columns, three-columns, fixed-width, custom-menu, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready
+	Tags: gray, light blue, black, red, white, one-column, two-columns, three-columns, fixed-width, custom-menu, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready
  
 	Template: genesis
 	Template Version: 2.0.1
@@ -510,7 +510,7 @@ Structure and Layout
 }
 
 .site-header {
-	height: 225px;
+	height: 250px;
 	overflow: hidden;
 }
 
@@ -546,7 +546,7 @@ Structure and Layout
 .header-image #title-area {
 	display: block;
 	float: left;
-	height: 225px;
+	height: 250px;
 	overflow: hidden;
 	text-indent: -9999px;
 }
@@ -1236,7 +1236,7 @@ Site Header
 	font-weight: 700;
 	padding: 16px 0;
 	padding: 1.6rem 0;
-	width: 500px;
+	width: 600px;
 }
 
 .header-image .title-area {
@@ -1288,7 +1288,7 @@ Site Header
 
 .header-image .site-title a {
 	float: left;
-	min-height: 225px;
+	min-height: 250px;
 	width: 100%;
 }
 
@@ -1302,7 +1302,7 @@ Site Header
 .site-header .widget-area {
 	float: right;
 	text-align: right;
-	width: 400px;
+	width: 500px;
 }
 
 .header-image .site-header .widget-area {
@@ -2005,10 +2005,19 @@ Theme Colors ------------------ Theme Colors -----------------------------------
 	color: gainsboro;
 }
 
-/* Theme Color -------- RED as Secondary (MainMenu/Widget Accents) ---------------
+/* Theme Color -------- Black Header w/ RED as Secondary (MainMenu/Widget Accents) ---------------
  */
 .local-life-redsec .site-header {
-	background-color: #fff;
+	background-color: #171718;
+}
+
+.local-life-redsec .site-title a,
+.local-life-redsec .site-title a:hover {
+	color: #FFFFFF;
+}
+
+.local-life-redsec .site-description {
+	color: gainsboro;
 }
 
 .local-life-redsec .nav-primary {
@@ -2041,6 +2050,57 @@ Theme Colors ------------------ Theme Colors -----------------------------------
 	color: #d9d9d9;
 }
 
+.local-life-redsec .widget-title {
+	color: #171718;
+}
+
+
+/* Theme Color -------- White Header w/ RED as Secondary (MainMenu/Widget Accents) ---------------
+ */
+.local-life-whitered .site-header {
+	background-color: #FFFFFF;
+}
+
+.local-life-whitered .site-title a,
+.local-life-whitered .site-title a:hover {
+	color: #9E0000;
+}
+
+.local-life-whitered .site-description {
+	color: gainsboro;
+}
+
+.local-life-whitered .nav-primary {
+	background-color: #9E0000;
+}
+
+.local-life-whitered .nav-primary a {
+	color: #d9d9d9;
+}
+
+.local-life-whitered .nav-primary a:hover,
+.local-life-whitered .nav-primary .current-menu-item > a {
+	color: #fff;
+}
+
+.local-life-whitered .sub-menu a {
+	color: #999;
+}
+
+.local-life-whitered .sub-menu .current-menu-item > a {
+	color: #333;
+}
+
+.local-life-whitered .nav-primary .sub-menu a:hover {
+	color: #333;
+}
+
+.local-life-whitered .footer-widgets {
+	background-color: #9E0000;
+	color: #d9d9d9;
+}
+
+
 /* ************** */
 
 .more-from-category {
@@ -2058,7 +2118,7 @@ Media Queries
 
 	.header-image .site-header .wrap {
 		/*background: url(images/logo@2x.png) no-repeat left;*/
-		background-size: 320px 164px;
+		/*background-size: 320px 164px;*/
 	}
 
 }
@@ -2082,7 +2142,7 @@ Media Queries
 
 	.content,
 	.site-header .widget-area {
-		width: 620px;
+		width: 360px;
 	}
 
 	.sidebar-content-sidebar .content,
@@ -2094,8 +2154,7 @@ Media Queries
 	.footer-widgets-1,
 	.footer-widgets-2,
 	.footer-widgets-3,
-	.sidebar-primary,
-	.title-area {
+	.sidebar-primary {
 		width: 300px;
 	}
 
@@ -2166,21 +2225,6 @@ Media Queries
 		text-align: center;
 	}
 	
-	.local-life-erare .site-title {
-		font-size: 2.0em;
-		/*max-width: 300px;*/
-		/*background-color: rgba(197, 206, 205, 0.6);*/
-		/*text-align: left;/* /* To see text over ERA logo */
-	}
-	
-	.local-life-erare  .site-description {
-		font-size: 100%;
-		/*max-width: 400px;*/
-		/*background-color: rgba(197, 206, 205, 0.5);*/
-		/*text-align: left;*/ /* To see text over ERA logo */	
-	}
-	
-
 	.genesis-nav-menu a,
 	.genesis-nav-menu > .first > a,
 	.genesis-nav-menu > .last > a {
@@ -2233,12 +2277,6 @@ Media Queries
 
 	#wrap {
 		padding: 0 5%;
-	}
-
-	/* once screen gets this small, hide the built-in (right-aligned) ERA logo */
-	.local-life-erare .site-header {
-		background: url(images/blank.png) #fff no-repeat bottom right;
-		/*background-size: contain;*/
 	}
 	
 	.archive-page,
@@ -2460,4 +2498,3 @@ Media Queries
 	}
 	
 }
-

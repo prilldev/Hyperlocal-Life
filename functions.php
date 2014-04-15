@@ -84,11 +84,28 @@ if (!is_page()) {
     return $post_meta;
 }}
 
-//* Customize the return to top of page text
-add_filter( 'genesis_footer_backtotop_text', 'sp_footer_backtotop_text' );
-function sp_footer_backtotop_text($backtotop) {
-	$backtotop = '[footer_backtotop text="Return to Top"]';
-	return $backtotop;
+//* Custom Footer
+add_filter( 'genesis_footer_output', 'locallife_custom_footer' );
+function locallife_custom_footer( $output ) {
+ 
+	$output = sprintf( '<p><a class="totop" href="#">Return to Top</a> &middot; [footer_copyright] &middot; <a href="http://bgrweb.com/hyperlocal-theme">%s</a>%s<a href="http://mywp.bgrweb.com/goto/genesis-framework">%s</a></p>', 
+				 __( 'Hyperlocal Life', 'locallife' ), __( ' Theme powered by ', 'locallife' ), __( 'Genesis', 'locallife' ) );
+	return $output;
+ 
+}
+
+//* Add smooth scrolling for the link with "totop" class (ie, the "Return to Top" link just created above)
+add_action('wp_footer', 'locallife_go_to_top');
+function locallife_go_to_top() { ?>
+	<script type="text/javascript">
+        jQuery(function($) {
+			$('a.totop').click(function() {
+            	$('html, body').animate({scrollTop:0}, 'slow');
+				return false;
+        	});
+        });
+	</script>
+<?php 
 }
 
 /** Modify the size of the Gravatar in the author box */

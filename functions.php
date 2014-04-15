@@ -21,10 +21,7 @@ add_theme_support( 'genesis-responsive-viewport' );
 //* Add support for custom background
 add_theme_support( 'custom-background' );
 
-/** Add support for custom header */
-/* REMOVING Custom Header support as Local Life sets it in CSS */
-/* add_theme_support( 'genesis-custom-header', array( 'width' => 1175, 'height' => 225 ) ); */
-//* Add support for custom header
+/** Add support for custom header (500x225) */
 add_theme_support( 'custom-header', array(
 	'header_image'    => '',
 	'header-selector' => '.site-title a',
@@ -89,7 +86,7 @@ add_filter( 'genesis_footer_output', 'locallife_custom_footer' );
 function locallife_custom_footer( $output ) {
  
 	$output = sprintf( '<p><a class="totop" href="#">Return to Top</a> &middot; [footer_copyright] &middot; <a href="http://bgrweb.com/hyperlocal-theme">%s</a>%s<a href="http://mywp.bgrweb.com/goto/genesis-framework">%s</a></p>', 
-				 __( 'Hyperlocal Life', 'locallife' ), __( ' Theme powered by ', 'locallife' ), __( 'Genesis', 'locallife' ) );
+				 __( 'Hyperlocal', 'locallife' ), __( ' Theme powered by ', 'locallife' ), __( 'Genesis', 'locallife' ) );
 	return $output;
  
 }

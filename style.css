@@ -1,10 +1,10 @@
 /*
 	Theme Name: Hyperlocal Life
-	Description: Hyperlocal/Lifestyle theme created for the Genesis Framework.
+	Description: Hyperlocal/Lifestyle theme created for the Genesis Framework. HTML5.
 	Author: Aaron Prill
 	Author URI: http://aaronprill.com
 	Theme URI: http://bgrweb.com/hyperlocal-theme/
-	Version: 2.0.2
+	Version: 2.0.3
  
 	Tags: gray, light blue, red, white, one-column, two-columns, three-columns, fixed-width, custom-menu, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready
  
@@ -1981,6 +1981,10 @@ Theme Colors ------------------ Theme Colors -----------------------------------
 	background-color: rgba(93, 150, 189, 0.5);
 }
 
+.local-life-ltbluebk .site-title a,
+.local-life-ltbluebk .site-title a:hover {
+	color: rgba(93, 150, 189, 1);
+}
 .local-life-ltbluebk .site-description {
 	color: gainsboro;
 }
@@ -1994,7 +1998,7 @@ Theme Colors ------------------ Theme Colors -----------------------------------
 
 .local-life-redbk .site-title a,
 .local-life-redbk .site-title a:hover {
-	color: #FFF;
+	color: rgba(184, 71, 71, 1);
 }
 
 .local-life-redbk .site-description {

@@ -1236,7 +1236,7 @@ Site Header
 	font-weight: 700;
 	padding: 16px 0;
 	padding: 1.6rem 0;
-	width: 320px;
+	width: 500px;
 }
 
 .header-image .title-area {
@@ -1302,7 +1302,7 @@ Site Header
 .site-header .widget-area {
 	float: right;
 	text-align: right;
-	width: 800px;
+	width: 400px;
 }
 
 .header-image .site-header .widget-area {
